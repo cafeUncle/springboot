@@ -12,7 +12,9 @@ public class DateController {
 
     @GetMapping("/hello")
     public Date hello() {
-        return new Date();
+        Date date = new Date();
+        date.setTime(date.getTime() + 1000 * 60 * 60 * 24 * 5);
+        return date;
     }
 
 }
