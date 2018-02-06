@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 
 // 这里使用Advice的注解就不需要让其他controller继承了
 @ControllerAdvice
-public class ExceptionController {
+public class GlobalExceptionController {
     @Value("${error.url}")
     private String errUrl;
 
