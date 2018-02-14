@@ -9,10 +9,12 @@ import org.springframework.integration.handler.LoggingHandler;
 import org.springframework.integration.mqtt.inbound.MqttPahoMessageDrivenChannelAdapter;
 import org.springframework.integration.mqtt.support.DefaultPahoMessageConverter;
 
+/**
+ * 配置 consumer
+ */
 @Configuration
 public class MqttConsumer {
 
-    //配置consumer
     @Bean
     public IntegrationFlow mqttInFlow() {
         return IntegrationFlows.from(mqttInbound())
