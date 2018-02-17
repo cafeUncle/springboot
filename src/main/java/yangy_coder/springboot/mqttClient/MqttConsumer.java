@@ -13,10 +13,16 @@ public class MqttConsumer {
             conOptions.setUserName("testuser");
             conOptions.setPassword("123456".toCharArray());
             conOptions.setCleanSession(false);
+//            conOptions.setKeepAliveInterval(10000);
+            /**
+             * 调用后将保持连接，调用disconnect后断开
+             */
             client.connect(conOptions);
             client.subscribe("example", 1);
-            Thread.sleep(10000);
-            client.disconnect();
+            /**
+             * 调用disconnect方法后断开连接
+             */
+//            client.disconnect();
         } catch (Exception e) {
             e.printStackTrace();
         }
