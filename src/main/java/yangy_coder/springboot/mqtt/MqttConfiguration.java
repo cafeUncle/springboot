@@ -8,8 +8,8 @@ import org.springframework.integration.annotation.IntegrationComponentScan;
 import org.springframework.integration.mqtt.core.DefaultMqttPahoClientFactory;
 import org.springframework.integration.mqtt.core.MqttPahoClientFactory;
 
-@Configuration
-@IntegrationComponentScan
+//@Configuration
+//@IntegrationComponentScan
 public class MqttConfiguration {
 
     @Value("${mqtt.brokerHost}")

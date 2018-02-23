@@ -1,4 +1,4 @@
-package yangy_coder.springboot.mqttClient;
+package yangy_coder.springboot.mqtt_client;
 
 import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
 import org.eclipse.paho.client.mqttv3.MqttCallback;

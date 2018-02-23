@@ -5,7 +5,7 @@ import org.springframework.integration.annotation.MessagingGateway;
 /**
  * 配置MessagingGateway
  */
-@MessagingGateway(defaultRequestChannel = "outChannel")
+//@MessagingGateway(defaultRequestChannel = "outChannel")
 public interface MsgWriter {
     void write(String note);
 }

@@ -23,4 +23,9 @@ public class PageController {
         return "hello";
     }
 
+    @RequestMapping("/webSocket")
+    public String webSocket(Model model) {
+        return "webSocket";
+    }
+
 }

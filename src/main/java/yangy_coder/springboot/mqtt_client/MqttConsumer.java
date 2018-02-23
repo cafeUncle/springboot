@@ -1,4 +1,4 @@
-package yangy_coder.springboot.mqttClient;
+package yangy_coder.springboot.mqtt_client;
 
 import org.eclipse.paho.client.mqttv3.MqttClient;
 import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
@@ -13,7 +13,7 @@ public class MqttConsumer {
             conOptions.setUserName("testuser");
             conOptions.setPassword("123456".toCharArray());
             conOptions.setCleanSession(false);
-//            conOptions.setKeepAliveInterval(10000);
+//            conOptions.setKeepAliveInterval(10000); //检查时间？
             /**
              * 调用后将保持连接，调用disconnect后断开
              */
