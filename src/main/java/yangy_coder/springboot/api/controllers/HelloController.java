@@ -3,12 +3,12 @@ package yangy_coder.springboot.api.controllers;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import yangy_coder.springboot.api.BaseApiController;
 
 import java.util.Date;
 
 @RestController
-@RequestMapping("/api")
-public class DateController {
+public class HelloController extends BaseApiController{
 
     @GetMapping("/hello")
     public Date hello() {

@@ -35,4 +35,9 @@ public class PageController {
         return "webSocket";
     }
 
+    @RequestMapping("/multiDB")
+    public String multiDB(){
+        return "db";
+    }
+
 }
