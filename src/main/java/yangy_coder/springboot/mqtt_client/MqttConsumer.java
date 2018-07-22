@@ -6,7 +6,7 @@ import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
 public class MqttConsumer {
     public static void main(String[] args) {
         try {
-            MqttClient client = new MqttClient("tcp://192.168.223.130:1883", "java_client_consumer", null);
+            MqttClient client = new MqttClient("tcp://192.168.1.200:1883", "java_client_consumer", null);
             MyCallback callback = new MyCallback("java_client_consumer");
             client.setCallback(callback);
             MqttConnectOptions conOptions = new MqttConnectOptions();

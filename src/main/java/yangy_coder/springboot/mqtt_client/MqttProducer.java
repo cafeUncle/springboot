@@ -5,9 +5,9 @@ import org.eclipse.paho.client.mqttv3.*;
 public class MqttProducer {
     public static void main(String[] args) {
         try {
-            MqttClient client = new MqttClient("tcp://192.168.223.130:1883","java_client", null);
+            MqttClient client = new MqttClient("tcp://192.168.1.200:1883","java_client_123123", null);
             MqttTopic topic = client.getTopic("example");
-            MqttMessage message = new MqttMessage("Hello World. Hello IBM".getBytes());
+            MqttMessage message = new MqttMessage("Hello World. Hello Mq".getBytes());
             message.setQos(1);
             MqttConnectOptions mqttConnectOptions = new MqttConnectOptions();
             mqttConnectOptions.setUserName("testuser");
